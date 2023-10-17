@@ -1,0 +1,25 @@
+class Mentor
+ attr_accessor :name,
+ 
+ def  initialize
+  self.name='name'
+ end
+ 
+ def job
+  puts "#{self.name}です。私は現役のITプロフェッショナルです。"
+ end
+end
+
+class RailsMentor < Mentor
+ def job
+   puts "#{self.name}です。私はrubyとrailsでアプリケーションを作ります。"
+ end
+end
+
+kirameki=Mentor.new
+kirameki.name=kirameki
+kirameki.job
+
+akaide=RailsMentor.new
+akaide.name=akaide
+akaide.job
